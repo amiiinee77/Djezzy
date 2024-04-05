@@ -3,7 +3,7 @@ const config = {
    host: "localhost",
    user: "root",
    password: "",
-   database: "backRevision",
+   database: "expensimed",
    port: 3306,
  },
 };
