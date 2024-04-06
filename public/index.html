@@ -1,69 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<!-- <script src="https://kit.fontawesome.com/aa279e196c.js" crossorigin="anonymous"></script> -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<base href="./" />
-		<link rel="stylesheet" href="css/styles.css" />
-		<title>Djezzy</title>
-	</head>
-	<body>
-		<header class="flex justify-center shadow-lg p-5">
-			<div class="flex gap-16 items-center">
-				<nav class="flex gap-5">
-					<div class="text-lg text-gray-500">Offres</div>
-					<div class="text-lg text-gray-500">Services</div>
-					<div class="text-lg text-gray-500">Mobiles</div>
-					<div class="text-lg text-red-500">Promo Ramadan</div>
-				</nav>
-				<img src="img/logo.svg" class="w-20 aspect-square object-contain" />
-			</div>
-		</header>
-		<img
-			src="img/web-rubrique-b2c-home-page-copie-1.jpg"
-			alt=""
-			class="max-h-[70vh] w-full object-cover" />
-		<main class="p-20">
-			<section class="flex flex-col items-center gap-20">
-				<h2 class="text-4xl font-semibold text-gray-500">Contactez-nous</h2>
-				<form class="flex flex-col items-center w-2/3 gap-4">
-					<div class="grid grid-cols-2 gap-4 w-full">
-						<div class="w-full flex flex-col">
-							<label class="text-gray-600 mb-1 font-medium text-sm">Nom</label>
-							<input
-								placeholder="Votre nom"
-								type="text"
-								class="border border-gray-400 px-4 py-2 rounded-md placeholder:font-light" />
-						</div>
-						<div class="w-full flex flex-col">
-							<label class="text-gray-600 mb-1 font-medium text-sm">Prénom</label>
-							<input
-								placeholder="Votre prénom"
-								type="text"
-								class="border border-gray-400 px-4 py-2 rounded-md placeholder:font-light" />
-						</div>
-					</div>
-					<div class="w-full flex flex-col">
-						<label class="text-gray-600 mb-1 font-medium text-sm">Email</label>
-						<input
-							placeholder="Votre adresse mail"
-							type="text"
-							class="border border-gray-400 px-4 py-2 rounded-md placeholder:font-light" />
-					</div>
-					<div class="w-full flex flex-col">
-						<label class="text-gray-600 mb-1 font-medium text-sm">N˚ de téléphone</label>
-						<input
-							placeholder="Votre numéro de téléphone"
-							type="text"
-							class="border border-gray-400 px-4 py-2 rounded-md placeholder:font-light" />
-					</div>
-					<button
-						class="px-20 py-2.5 text-white bg-red-500 font-semibold rounded-lg hover:bg-red-700 transition-colors mt-6">
-						Envoyer
-					</button>
-				</form>
-			</section>
-		</main>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <script src="https://kit.fontawesome.com/aa279e196c.js" crossorigin="anonymous"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="./" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Djezzy</title>
+  </head>
+  <body>
+    <header class="flex justify-center shadow-lg p-5">
+      <div class="flex gap-16 items-center">
+        <nav class="flex gap-5">
+          <div class="text-lg text-gray-500">Offres</div>
+          <div class="text-lg text-gray-500">Services</div>
+          <div class="text-lg text-gray-500">Mobiles</div>
+          <div class="text-lg text-red-500">Promo Ramadan</div>
+        </nav>
+        <img src="img/logo.svg" class="w-20 aspect-square object-contain" />
+      </div>
+    </header>
+    <img src="img/web-rubrique-b2c-home-page-copie-1.jpg" alt="" class="max-h-[70vh] w-full object-cover" />
+    <main class="p-20">
+      <section class="flex flex-col items-center gap-20">
+        <h2 class="text-4xl font-semibold text-gray-500">Contactez-nous</h2>
+        <div id="contact-form" class="flex flex-col items-center w-2/3 gap-4">
+          <div class="grid grid-cols-2 gap-4 w-full">
+            <div class="w-full flex flex-col">
+              <label class="text-gray-600 mb-1 font-medium text-sm">Nom</label>
+              <input placeholder="Votre nom" type="text" class="border border-gray-400 px-4 py-2 rounded-md placeholder:font-light" data-id="nom" />
+            </div>
+            <div class="w-full flex flex-col">
+              <label class="text-gray-600 mb-1 font-medium text-sm">Prénom</label>
+              <input placeholder="Votre prénom" type="text" class="border border-gray-400 px-4 py-2 rounded-md placeholder:font-light" data-id="prenom" />
+            </div>
+          </div>
+          <div class="w-full flex flex-col">
+            <label class="text-gray-600 mb-1 font-medium text-sm">Email</label>
+            <input placeholder="Votre adresse mail" type="text" class="border border-gray-400 px-4 py-2 rounded-md placeholder:font-light" data-id="email" />
+          </div>
+          <div class="w-full flex flex-col">
+            <label class="text-gray-600 mb-1 font-medium text-sm">N˚ de téléphone</label>
+            <input placeholder="Votre numéro de téléphone" type="text" class="border border-gray-400 px-4 py-2 rounded-md placeholder:font-light" data-id="phone" />
+          </div>
+          <div class="w-full flex flex-col">
+            <label class="text-gray-600 mb-1 font-medium text-sm">Message</label>
+            <textarea placeholder="Votre numéro de téléphone" type="text" class="border border-gray-400 px-4 py-2 rounded-md placeholder:font-light" data-id="message"></textarea>
+          </div>
+          <button id="submitFrom" class="px-20 py-2.5 text-white bg-red-500 font-semibold rounded-lg hover:bg-red-700 transition-colors mt-6">Envoyer</button>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/index.js"></script>
 </html>
